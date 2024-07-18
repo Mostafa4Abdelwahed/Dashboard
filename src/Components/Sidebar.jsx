@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { Menu, MenuButton, MenuItem, MenuList, WrapItem } from '@chakra-ui/react'
 import { IoHomeOutline, IoSettingsOutline } from "react-icons/io5";
 import { MdOutlineVilla } from "react-icons/md";
@@ -11,7 +11,6 @@ import Container from "./../Components/Container";
 
 const Sidebar = () => {
     const [open, setOpen] = useState(false);
-    const navigate = useNavigate();
     return (
         <Fragment>
             <div className={`fixed z-50 lg:right-0 w-[220px] h-full bg-teal-950 text-white ${open ? "right-0" : "-right-[100%]"}`}>
@@ -58,7 +57,7 @@ const Sidebar = () => {
                                             </MenuButton>
                                         </WrapItem>
                                         <MenuList>
-                                            <MenuItem onClick={() => { navigate("/dashboard/settings") }}>الاعدادات</MenuItem>
+                                            <MenuItem as={Link} to="/settings">الاعدادات</MenuItem>
                                             <MenuItem>تسجيل خروج</MenuItem>
                                         </MenuList>
                                     </Menu>
