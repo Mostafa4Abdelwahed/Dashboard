@@ -3,6 +3,9 @@
 
 React.js admin dashboard template and UI library based on TailwindCSS & ChakraUi
 
+# Image From App
+<img src="https://d.top4top.io/p_3154ji9ob1.png" width="100%" />
+
 # 🛠️ Tech stack 
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
